@@ -7,4 +7,6 @@
 3. Instalar el modulo de prisma --> npm i prisma -D para Instalar como dependencia de desarrollo
 4. Inicializar la configuracion de prisma con --> npx prisma init que por defecto trabaja con postgressql inicializa por defecto con postgressql
 5. Definir la opcion --datasource-provider + provider siendo provider una de las siguientes opciones sqlite, postgressql, mysql, mongodb etc
-6. 
+6. Automaticamente se crea la carpeta prisma con el fichero schema.prisma
+7. Se crea el fichero .env que por lo general se crea en la raiz donde se establece la URL de la base de datos 
+8.  
