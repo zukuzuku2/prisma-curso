@@ -11,4 +11,13 @@ async function crearDatos() {
   console.log(newUser);
 }
 
-crearDatos();
+//crearDatos()
+
+	
+	
+async function listarUsuarios() {
+  const listUser = await prisma.User.findMany() //--> devuelve un arreglo de todos los usuarios
+	console.log(listUser);
+}
+
+listarUsuarios()
