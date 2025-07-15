@@ -15,3 +15,8 @@
 1. npx prisma migrate --> espera 2 banderas -dev o produccion
 2. Instalar SQLiteViewer en caso de que estemos en VSCode sino buscar otro gestor de BBDD
 3. @prisma/client es el modulo que nos permite sincronizar el codigo de JS o TS con la BBDD
+
+## Crear Datos
+1. @prisma/client --> siempre se utiliza para comenzar con la importacion import {(Modulos de Prisma)} from "@prisma/client"
+2. El modulo PrismaClient es la propia conexion a Prisma no tengo que utilizar ningun parametro adicional como en mongoose
+3. 
