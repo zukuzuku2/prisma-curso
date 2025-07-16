@@ -1,7 +1,7 @@
 const { PrismaClient } = require("../generated/prisma");
 const prisma = new PrismaClient(); // --> conexion a prisma
 
- async function crearDatos() {
+async function crearDatos() {
   const newUser = await prisma.User.create({
     data: {
       name: "Yoandri",
@@ -12,5 +12,5 @@ const prisma = new PrismaClient(); // --> conexion a prisma
 }
 
 module.exports = {
-	crearDatos
-}
+  crearDatos,
+};
