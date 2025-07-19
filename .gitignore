@@ -7,10 +7,13 @@ node_modules/
 
 # Database
 *.db
+**/*.db
 *.db-journal
+**/*.db-journal
 
 # Generated Prisma client
 prisma/generated/
+generated/prisma/
 
 # Logs
 *.log
