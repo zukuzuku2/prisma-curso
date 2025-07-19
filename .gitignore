@@ -13,6 +13,7 @@ node_modules/
 
 # Generated Prisma client
 prisma/generated/
+generated/prisma/
 
 # Logs
 *.log
