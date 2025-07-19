@@ -7,6 +7,7 @@ const {
   postUser,
   primeraCoincidencia,
 } = require("./controllers/relationships.controller");
+const { listPost, usersPosts } = require("./controllers/list.post.controller");
 
 /* crearDatos().catch((err) =>
   console.error(`Error en ${err.message} en el modulo ${err.meta.modelName}`),
@@ -22,3 +23,5 @@ const {
 // postUser();
 // primeraCoincidencia();
 //
+// listPost();
+// usersPosts();

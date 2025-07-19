@@ -18,11 +18,14 @@ const primeraCoincidencia = (id, boleano) =>
       },
     })
     .then((res) => {
-      boleano
-        ? console.log(
-            `${JSON.stringify(res)}  primeraCoincidencia que corresponde al primero que tenga el id 2 en este caso`,
-          )
-        : res;
+      if (boleano) {
+        console.log(
+          `${JSON.stringify(
+            res
+          )}  primeraCoincidencia que corresponde al primero que tenga el id 2 en este caso`
+        );
+      }
+      return res;
     });
 
 // Al tener mas de 1 parametro el where ellos deben coincidir con el registro exacto, de lo contratio devolvera 1 null, ademas este metodo tambien devuelve un objeto con el user exacto o simplemente un null
@@ -37,7 +40,9 @@ const coincidenciaExacta = () =>
     })
     .then((res) => {
       console.log(
-        `${JSON.stringify(res)} coincidenciaExacta que corresponda exactamente con lo que esta dentro del where`,
+        `${JSON.stringify(
+          res
+        )} coincidenciaExacta que corresponda exactamente con lo que esta dentro del where`
       );
     });
 
@@ -70,7 +75,9 @@ const unoyOtro = () =>
     })
     .then((res) => {
       console.log(
-        `${JSON.stringify(res)} unoyOtro se comporta de la misma manera que el res de la coincidencia exacta`,
+        `${JSON.stringify(
+          res
+        )} unoyOtro se comporta de la misma manera que el res de la coincidencia exacta`
       );
     });
 

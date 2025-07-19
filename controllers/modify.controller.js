@@ -1,4 +1,4 @@
-const { PrismaClient } = require("../generated/prisma");
+const { PrismaClient } = require('../generated/prisma');
 const prisma = new PrismaClient();
 
 const updateUser = () => {
@@ -8,7 +8,7 @@ const updateUser = () => {
         id: 6,
       },
       data: {
-        lastname: "Benitez",
+        lastname: 'Benitez',
       },
     })
     .then((res) =>

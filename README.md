@@ -54,3 +54,11 @@ update:{
 #### Resumen
 
 En el modelo **Post** el campo **author** se va a relacionr con el modelo **User** y los campos que se van a relacionar son **authorId** que seria del modelo **Post** con **id** que seria del modelo **User**
+
+## Listar datos relacionados
+1. Se declara una funcion asincrona donde se listan los usuarios dentro como parametro del metodo findMany se le pasa una propiedad **include: {}** y dentro de las llaves se le especifica el valor relacionado con en el siguiente ejemplo
+    a. prisma.user.findMany({
+        include: {
+        post: true, --> propiedad que relaciona el modelo **User** con el modelo **Post** que no es lo mismo que *post* ya que este es la propiedad a la que hacer referencia la relacion
+        },
+        })
