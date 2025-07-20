@@ -10,6 +10,19 @@
 6. Automaticamente se crea la carpeta prisma con el fichero schema.prisma
 7. Se crea el fichero .env que por lo general se crea en la raiz donde se establece la URL de la base de datos
 8. Cada vez que se agregue un modelo nuevo hay que hacer una migracion para ello utilizamos el comando del paso anterior pero con la bandera dev --> npx prisma migrate dev
+9. Configurar el archivo .gitignore para evitar subir archivos de base de datos y archivos generados:
+   ```
+   # Database
+   *.db
+   **/*.db
+   *.db-journal
+   **/*.db-journal
+   
+   # Generated Prisma client
+   prisma/generated/
+   generated/prisma/
+   ```
+10. Si se elimina la base de datos (por ejemplo, al clonar el repositorio), ejecutar `npx prisma migrate dev` para recrearla
 
 ### Prisma
 
